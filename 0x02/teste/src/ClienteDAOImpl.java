@@ -1,12 +1,12 @@
 import java.sql.*;
 
-public class ClienteDAOImpl implements ClienteDAO{
+public class ClienteDAOImpl implements ClienteDAO {
     @Override
     public Connection connect(String urlConexao) {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(urlConexao);
-            System.out.println("Connection to SQLite has been established.");
+            System.out.println("Connection to SQLite has been established.1");
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {
